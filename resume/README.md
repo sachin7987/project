@@ -11,6 +11,7 @@ Linux/Windows/macOS with **XeLaTeX** — no proprietary fonts required.
 | --- | --- |
 | `deedy-resume-openfont.cls` | The document class. Defines all colours, fonts and layout commands. You normally never edit this. |
 | `resume.tex` | Sachin Rai's résumé — a worked example of every command. |
+| `ghanshyam.tex` | Ghanshyam Rai's résumé — a second worked example (BBA / finance profile). |
 | `template.tex` | A blank, commented skeleton. Copy it to start a new résumé. |
 | `fonts/lato/` | Lato `.ttf` weights (Hairline, Light, Regular, Bold + italics). |
 | `fonts/raleway/` | Raleway `.otf` weights (ExtraLight, Medium, …). |
