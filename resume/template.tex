@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume  (BLANK TEMPLATE)
+%
+% Copy this file, rename it, and fill in the placeholders <...>.
+% Compile with XeLaTeX:   xelatex <yourfile>.tex
+%
+% LAYOUT CHEAT SHEET
+%   \namesection{First}{Last}{contact line(s)}   -> big centered header
+%   \section{Title}                              -> grey uppercase heading
+%   \subsection{Title}                           -> bold black sub-heading (own line)
+%   \runsubsection{Title}\descript{| detail}     -> bold heading + inline detail
+%   \descript{Text}                              -> small-caps descriptor line
+%   \location{Text}                              -> grey date/location line
+%   \sectionsep                                  -> vertical gap between blocks
+%   tightemize environment                       -> tight bullet list
+%   \textbullet{}                                -> the " " separator dot
+%
+% The page is two columns: a narrow left minipage (0.33) and a wide
+% right minipage (0.66). Put short lists on the left, prose on the right.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+\lastupdated
+
+\namesection{<First>}{<Last>}{
+\href{mailto:<email>}{<email>} | <phone> | LinkedIn: \href{<url>}{\bf <handle>}
+}
+
+%%%%%%%%%%%%%%%%%%%%%% LEFT COLUMN %%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.33\textwidth}
+
+\section{Education}
+\subsection{<School>}
+\descript{<Degree>}
+\location{<Grad date> | <Score>}
+\sectionsep
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient:}
+<Lang> \textbullet{} <Lang> \\
+\location{Familiar:}
+<Lang> \textbullet{} <Lang>
+\sectionsep
+
+\section{Coursework}
+\subsection{Undergraduate}
+<Course> \\
+<Course>
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%% RIGHT COLUMN %%%%%%%%%%%%%%%%%%%%%%
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+\section{Experience}
+\runsubsection{<Company>}
+\descript{| <Role>}
+\location{<Start> - <End> | <City>}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space on first item
+\begin{tightemize}
+\item <What you did / achieved>
+\item <What you did / achieved>
+\end{tightemize}
+\sectionsep
+
+\section{Projects}
+\runsubsection{<Project>}
+\descript{| <Tech> | <Tech>}
+\begin{tightemize}
+\item <One line about the project>
+\end{tightemize}
+\sectionsep
+
+\end{minipage}
+\end{document}
