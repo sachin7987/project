@@ -1,0 +1,15 @@
+# LaTeX build artifacts (keep the .tex, .cls, fonts, and final PDFs)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+build*.log
+resume_preview*.png
